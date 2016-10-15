@@ -1,7 +1,6 @@
 #!/usr/bin/env perl
 # vim:ts=4:sw=4:expandtab
 
-use Data::Dumper;
 use strict;
 use warnings;
 use JSON;
@@ -72,8 +71,7 @@ sub get_metar {
         ($metar) = $doc->findvalue(XPATH);
     } else {
         $metar = "Error " . $curl->strerror($retcode);
-        #die();
-        #print $curl->strerror($retcode);
+        $metar = $curl->strerror($retcode);
     }
 }
 
