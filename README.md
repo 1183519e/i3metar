@@ -1,6 +1,6 @@
 # i3metar
 
-i3status wrapper to show current aviation weather in the i3bar. 
+i3status wrapper to show current aviation weather in the i3bar. Inspired by Michael Stapelbergs [wrapper.pl](http://code.stapelberg.de/git/i3status/tree/contrib/wrapper.pl)
 
 ## usage
 
